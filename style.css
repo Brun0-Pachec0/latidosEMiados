@@ -48,7 +48,7 @@ body {
     color: #fff;
     font-size: 1.3em;
     font-weight: 700;
-    background-color: #49968b;
+    background-color: #E42324;
     padding: 10px 40px;
     border: 2px solid #fff;
     border-radius: 20px;
@@ -87,7 +87,7 @@ body {
 }
 
 .textofoto p {
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .fotos i {
@@ -235,7 +235,7 @@ main h1, main h2 {
 }
 
 #textoSobre {
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 0px 10px;
 }
 
@@ -289,7 +289,7 @@ main h1, main h2 {
 /* Rodapé */
 address {
     padding: 35px 10px 50px 10px;
-    background-color: #69b9ad;
+    background-color: #16A2D7;
     color: #fff;
 }
 
@@ -380,6 +380,7 @@ footer {
     main {
         height: 75vh;
         background-color: white;
+        background-image: url(./img/teste-logo.jpg);
         background-size: cover;
     }
 
@@ -485,8 +486,11 @@ footer {
     /* Cabeçalho */
 
     header {
-        height: 180px;
-        background-color:#A4E1D9;
+        height: 120px;
+        /* background-color:#F4AF16; */
+        background-color: #A4E1D9;
+        /* background-color: #E62528; */
+        /* background-color: #16A2D7; */
     }
 
     #logo img {
@@ -513,7 +517,7 @@ footer {
     }
 
     nav ul {
-        margin-top: 120px;
+        margin-top: 30px;
     }
 
     nav ul li a {
@@ -590,13 +594,13 @@ footer {
       }
       
       .card .info {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         color: #6faaa0;
         margin-top: 0.8rem;
       }
 
       .card .info a{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         color: #6faaa0;
         margin-top: 0.8rem;
         text-decoration: none;
