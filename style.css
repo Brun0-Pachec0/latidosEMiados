@@ -380,7 +380,7 @@ footer {
     main {
         height: 75vh;
         background-color: white;
-        background-image: url(./img/teste-logo.jpg);
+        background-image: url(./img/teste-logo.png);
         background-size: cover;
     }
 
@@ -610,6 +610,55 @@ footer {
         font-size: 1.3rem;
         color: #444;
       }
+
+      .whatsapp {
+        margin-right: 70px;
+      }
+
+      .whatsapp img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .tooltip .tooltip-text {
+        visibility: hidden;
+        background-color: #2AA81A;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%; /* posição acima do botão */
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+        white-space: nowrap;
+      }
+      
+      /* A setinha do tooltip */
+      .tooltip .tooltip-text::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* base da caixa de texto */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #2AA81A transparent transparent transparent;
+      }
+      
+      .tooltip a:hover .tooltip-text {
+        visibility: visible;
+        opacity: 1;
+      }
+      
 
 
     /* Rodapé */
