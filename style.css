@@ -20,6 +20,10 @@ body {
     font-size: 1em;
 }
 
+.btn-whatsapp {
+    width: 40px;
+}
+
 
 /* Layout */
 .container {
@@ -341,6 +345,14 @@ address img {
     padding: 40px;
 }
 
+#textoSite h2 {
+    text-align: center;
+}
+
+#textoSite p {
+    text-align: center;
+}
+
 #textoSite li {
     margin: 1rem 0px;
     display: flex;
@@ -538,7 +550,6 @@ footer {
 
     /* One Page */
     .flex3 {
-        flex-direction: row;
         align-items: center;
     }
 
