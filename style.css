@@ -20,6 +20,10 @@ body {
     font-size: 1em;
 }
 
+.btn-whatsapp {
+    width: 40px;
+}
+
 
 /* Layout */
 .container {
@@ -48,10 +52,10 @@ body {
     color: #fff;
     font-size: 1.3em;
     font-weight: 700;
-    background-color: #c00000;
+    background-color: #E42324;
     padding: 10px 40px;
     border: 2px solid #fff;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 
@@ -65,7 +69,7 @@ body {
  /* Slide de Imagens */
    /* body */
    #imagens {
-    background: url(./img/teste\ background\ parallax.jpg);
+    background: url(./img/teste-teste-teste.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -84,6 +88,10 @@ body {
     max-width: 1200px;
     position: relative;
     margin-top: 50px;
+}
+
+.textofoto p {
+    font-size: 1.2em;
 }
 
 .fotos i {
@@ -199,9 +207,8 @@ nav ul li a {
 
 main {
     height: 75vh;
-    background: url(./img/banner\ smartphone\ portrait.jpg);
     background-size: cover;
-    color: #fff;
+    color: #000000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -223,15 +230,16 @@ main h1, main h2 {
 
 /* Sobre */
 #sobre {
+    font-size: 1.1em;
     padding: 50px 0px;
-    background: url(./img/teste\ background\ parallax.jpg);
+    background: url(./img/teste-teste-teste.jpg);
     background-size: cover;
     background-attachment: fixed;
     /* background-color: #747474; */
 }
 
 #textoSobre {
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 0px 10px;
 }
 
@@ -285,7 +293,7 @@ main h1, main h2 {
 /* Rodapé */
 address {
     padding: 35px 10px 50px 10px;
-    background-color: #777777;
+    background-color: #16A2D7;
     color: #fff;
 }
 
@@ -319,10 +327,53 @@ address img {
     height: 35px;
 }
 
+#imagemDestaque {
+    border-radius: 100px;
+}
+
+.textoprecos1 {
+    margin-left: 50px;
+    background-color: rgb(233, 231, 231);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#textoSite ul {
+    list-style-type: none;
+    background-color: rgb(240, 240, 240);
+    border-radius: 25px;
+    padding: 40px;
+}
+
+#textoSite h2 {
+    text-align: center;
+}
+
+#textoSite p {
+    text-align: center;
+}
+
+#textoSite li {
+    margin: 1rem 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: 400;
+    color: rgb(29, 29, 29);
+    font-size: 1.125rem;
+}
+
+.textoprecos2 {
+    margin-left: 50px;
+    background-color: rgb(233, 231, 231);
+    padding: 50px;
+    border-radius: 20px;
+}
+
 footer {
     padding: 50px;
-    background-color: #343538;
-    color: #fff;
+    background-color: #fff;
+    color: #000000;
     text-align: center;
 }
 
@@ -340,7 +391,8 @@ footer {
 
     main {
         height: 75vh;
-        background: url(./img/imagem\ paintball\ 1\ fosca.jpg);
+        background-color: white;
+        background-image: url(./img/teste-logo.png);
         background-size: cover;
     }
 
@@ -447,13 +499,19 @@ footer {
 
     header {
         height: 120px;
+        /* background-color:#F4AF16; */
+        background-color: #A4E1D9;
+        /* background-color: #E62528; */
+        /* background-color: #16A2D7; */
     }
 
     #logo img {
-        width: 189px;
-        height: 154px;
-        margin-top: 27px;
+        width: 475px;
+        height: 180px;
+        margin-top: 0px;
+        margin-left: -380px;
     }
+    
 
     label {
         display: none;
@@ -471,7 +529,7 @@ footer {
     }
 
     nav ul {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     nav ul li a {
@@ -479,7 +537,7 @@ footer {
     }
 
     nav ul li a:hover {
-        color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
         transition: 0.2s;
     }
 
@@ -492,13 +550,126 @@ footer {
 
     /* One Page */
     .flex3 {
-        flex-direction: row;
         align-items: center;
     }
 
     .carrosel img {
         width: calc(100% / 3);
     }
+
+    .container2 {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .container2 h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 50px;
+        color: #554d4a;
+      }
+      
+      .card {
+        background-color: #f4faf9;
+        border: 1px solid #d7e1de;
+        border-radius: 16px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      .fotos-produtos img {
+        width: 224px;
+      }
+      
+      .card h2 {
+        font-size: 1.9rem;
+        color: #54776b;
+        margin-bottom: 1rem;
+      }
+      
+      .card ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      
+      .card ul li {
+        padding: 0.4rem 0;
+        border-bottom: 1px dashed #ddd;
+        font-size: 1.3rem;
+      }
+      
+      .card ul li:last-child {
+        border-bottom: none;
+      }
+      
+      .card .info {
+        font-size: 1.3rem;
+        color: #6faaa0;
+        margin-top: 0.8rem;
+      }
+
+      .card .info a{
+        font-size: 1.3rem;
+        color: #6faaa0;
+        margin-top: 0.8rem;
+        text-decoration: none;
+      }
+      
+      .card p {
+        font-size: 1.3rem;
+        color: #444;
+      }
+
+      .whatsapp {
+        margin-right: 70px;
+      }
+
+      .whatsapp img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .tooltip .tooltip-text {
+        visibility: hidden;
+        background-color: #2AA81A;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%; /* posição acima do botão */
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+        white-space: nowrap;
+      }
+      
+      /* A setinha do tooltip */
+      .tooltip .tooltip-text::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* base da caixa de texto */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #2AA81A transparent transparent transparent;
+      }
+      
+      .tooltip a:hover .tooltip-text {
+        visibility: visible;
+        opacity: 1;
+      }
+      
 
 
     /* Rodapé */
