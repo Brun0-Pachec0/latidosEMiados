@@ -8,7 +8,14 @@
     <link rel="icon" href="./img/golden_png.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <script>
+        function closeMenu() {
+            document.getElementById("check").checked = false;
+        }
+    </script>
 </head>
+
 <body>
     <!-- Cabeçalho -->
     <header id="inicio">
@@ -19,22 +26,20 @@
                 <input type="checkbox" id="check">
                 <label for="check">&#x2630;</label>
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#imagens">Banho</a></li>
-                    <li><a href="#precos">Preços</a></li>
-                    <li><a href="#chamarMenuContato">Contato</a></li>
+                    <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
+                    <li><a href="#sobre" onclick="closeMenu()">Sobre</a></li>
+                    <li><a href="#imagens" onclick="closeMenu()">Banho</a></li>
+                    <li><a href="#precos" onclick="closeMenu()">Preços</a></li>
+                    <li><a href="#chamarMenuContato" onclick="closeMenu()">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Destaque -->
-    <main>
-        <div class="container">
-            <!-- <a href="https://wa.me/5519993496934?text=Olá, Latidos e Miados! Gostaria de saber um pouco mais sobre os dias e horários para agendamento." target="_blank" title="Abrir no Whatsapp" class="Botao">Agendar pelo Whatsapp</a> -->
-        </div>
-    </main>
+     <div class="banner-container">
+    <main class="banner-image">
+    </main></div>
 
     <!-- Sobre -->
     <section id="sobre">
@@ -54,6 +59,16 @@
 
                     Acreditamos que cada animal é único e merece atenção especial. É por isso que, há 30 anos, 
                     nossa missão permanece a mesma: cuidar com responsabilidade, respeito e muito amor.</p>
+
+                <br>
+                <h4>IMAGENS DO AMBIENTE</h4>
+                <div class="imgs">
+                    <img src="./img/img_local/local5.jpeg" alt="img3" draggable="false">
+                    <img src="./img/img_local/local3.jpeg" alt="img3" draggable="false">
+                    <img src="./img/img_local/local2.jpeg" alt="img3" draggable="false">
+                    <img src="./img/img_local/local4.jpeg" alt="img3" draggable="false">
+                    <img src="./img/img_local/local1.jpeg" alt="img3" draggable="false">
+                </div>
             </div>
         </div>
     </section>
@@ -93,7 +108,7 @@
 
     <!-- Fotos -->
     <section id="imagens">
-        <div class="container">
+        <div class="container container-imagens" style="padding-inline: 0">
             <div class="textofoto">
                 <H2>UTILIZAMOS SWEET FRIEND NOS BANHOS</H2>
                 <p>A marca Sweet Friend produz produtos de higiene e beleza para animais, como cães e gatos. 
@@ -119,7 +134,7 @@
     <section id="precos">
         <div class="container">
             <div class="container2">
-                <h1>🐾 Serviços e Valores</h1>
+                <h1 class="titulo-container">🐾 Serviços e Valores</h1>
             
                 <section class="card">
                   <h2>🛁 Banho & Tosa</h2>
@@ -137,6 +152,7 @@
                 <section class="card">
                   <h2>🧼 Serviços Extras</h2>
                   <ul>
+                    <li>Assistência Veterinária</li>
                     <li>Hospedagem</li>
                     <li>Limpeza de ouvido</em></li>
                     <li>Corte de unha</li>
@@ -172,14 +188,20 @@
                 </div>
 
                 <div id="contato">
-                    <br>
-                    <a href="https://wa.me/5519993496934" target="_blank">
+                    <a href="https://wa.me/5519993496934" target="_blank" title="Clique e fale pelo Whatsapp">
                         <img class="btn-whatsapp" src="img/whatsapp.png" alt="botão do Whatsapp">
+                        <p>Petshop Latidos e Miados</p>
                         <p>(19) 99349-6934</p>
+                    </a>
+
+                    <a href="https://wa.me/5519993496934" target="_blank" title="Clique e fale pelo Whatsapp">
+                        <img class="btn-whatsapp" src="img/whatsapp.png" alt="botão do Whatsapp">
+                        <p>Veterinária Evelyn Ramos</p>
+                        <p>(19) 99809-7841</p>
                     </a>
                 </div>
 
-                <br><br><br>
+                <br><br>
                 <div class="container">
                     <h4>FUNCIONAMENTO:</h4>
                     <h4>Segunda à Terça-feira - <span>Das 08:00 às 16:00</span></h4>
