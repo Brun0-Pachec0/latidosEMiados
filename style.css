@@ -167,6 +167,10 @@ header {
   display: none;
 }
 
+.imgs {
+  display: none;
+}
+
 label {
   font-size: 3em;
   position: fixed;
@@ -622,6 +626,14 @@ header {
   /* Layout */
   .container {
     max-width: 1140px;
+  }
+
+  .hide-carrosel {
+    display: none;
+  }
+
+  .imgs {
+    display: block;
   }
 
   .banner-container {
