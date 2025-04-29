@@ -8,7 +8,14 @@
     <link rel="icon" href="./img/golden_png.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <script>
+        function closeMenu() {
+            document.getElementById("check").checked = false;
+        }
+    </script>
 </head>
+
 <body>
     <!-- Cabeçalho -->
     <header id="inicio">
@@ -19,22 +26,20 @@
                 <input type="checkbox" id="check">
                 <label for="check">&#x2630;</label>
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#imagens">Banho</a></li>
-                    <li><a href="#precos">Preços</a></li>
-                    <li><a href="#chamarMenuContato">Contato</a></li>
+                    <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
+                    <li><a href="#sobre" onclick="closeMenu()">Sobre</a></li>
+                    <li><a href="#imagens" onclick="closeMenu()">Banho</a></li>
+                    <li><a href="#precos" onclick="closeMenu()">Preços</a></li>
+                    <li><a href="#chamarMenuContato" onclick="closeMenu()">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Destaque -->
-    <main>
-        <div class="container">
-            <!-- <a href="https://wa.me/5519993496934?text=Olá, Latidos e Miados! Gostaria de saber um pouco mais sobre os dias e horários para agendamento." target="_blank" title="Abrir no Whatsapp" class="Botao">Agendar pelo Whatsapp</a> -->
-        </div>
-    </main>
+     <div class="banner-container">
+    <main class="banner-image">
+    </main></div>
 
     <!-- Sobre -->
     <section id="sobre">
@@ -103,7 +108,7 @@
 
     <!-- Fotos -->
     <section id="imagens">
-        <div class="container">
+        <div class="container container-imagens" style="padding-inline: 0">
             <div class="textofoto">
                 <H2>UTILIZAMOS SWEET FRIEND NOS BANHOS</H2>
                 <p>A marca Sweet Friend produz produtos de higiene e beleza para animais, como cães e gatos. 
@@ -129,7 +134,7 @@
     <section id="precos">
         <div class="container">
             <div class="container2">
-                <h1>🐾 Serviços e Valores</h1>
+                <h1 class="titulo-container">🐾 Serviços e Valores</h1>
             
                 <section class="card">
                   <h2>🛁 Banho & Tosa</h2>
