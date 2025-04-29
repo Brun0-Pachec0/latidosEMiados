@@ -60,8 +60,9 @@ body {
 }
 
 /* Topo do site */
-#topo {
+.topo {
   position: fixed;
+  display: flex;
   right: 10px;
   bottom: 10px;
 }
@@ -164,6 +165,10 @@ header {
 }
 
 #check {
+  display: none;
+}
+
+.imgs {
   display: none;
 }
 
@@ -283,16 +288,26 @@ main h2 {
 }
 
 .whatsapp img {
-  padding-right: 60px;
+  padding-right: 20px;
 }
 
 .whatsapp img {
-  width: 80px;
-  height: 80px;
+  width: 53px;
+  height: 53px;
+  margin-bottom: -1px
 }
 
-.tooltip-text {
-  display: none;
+.btn-topo {
+  background-color: #555;
+  color: #fff;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; text-align: center;
+  text-decoration: none;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* PREÇOS */
@@ -400,6 +415,45 @@ address img {
     gap: 5px !important;
     font-size: 1rem !important;
   }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  background-color: #2aa81a;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* posição acima do botão */
+  left: 30%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+/* A setinha do tooltip */
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* base da caixa de texto */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #2aa81a transparent transparent transparent;
+}
+
+.tooltip a:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 #textoSite h2 {
@@ -624,6 +678,14 @@ header {
     max-width: 1140px;
   }
 
+  .hide-carrosel {
+    display: none;
+  }
+
+  .imgs {
+    display: block;
+  }
+
   .banner-container {
     padding-top: 7.5rem
 }
@@ -750,51 +812,7 @@ header {
     font-size: 1.3rem;
     color: #444;
   }
-
-
-  .whatsapp img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .tooltip {
-    position: relative;
-    display: inline-block;
-  }
-
-  .tooltip .tooltip-text {
-    visibility: hidden;
-    background-color: #2aa81a;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%; /* posição acima do botão */
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-    white-space: nowrap;
-  }
-
-  /* A setinha do tooltip */
-  .tooltip .tooltip-text::after {
-    content: "";
-    position: absolute;
-    top: 100%; /* base da caixa de texto */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #2aa81a transparent transparent transparent;
-  }
-
-  .tooltip a:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-  }
+  
 
   /* Rodapé */
 

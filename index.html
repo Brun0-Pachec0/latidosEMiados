@@ -18,7 +18,7 @@
 
 <body>
     <!-- Cabeçalho -->
-    <header id="inicio">
+    <header >
         <div class="container flex">
             <div id="logo">
             </div>
@@ -37,7 +37,7 @@
     </header>
 
     <!-- Destaque -->
-     <div class="banner-container">
+     <div class="banner-container" id="inicio">
     <main class="banner-image">
     </main></div>
 
@@ -60,14 +60,29 @@
                     Acreditamos que cada animal é único e merece atenção especial. É por isso que, há 30 anos, 
                     nossa missão permanece a mesma: cuidar com responsabilidade, respeito e muito amor.</p>
 
-                <br>
+                <br><br>
                 <h4>IMAGENS DO AMBIENTE</h4>
+                <br>
                 <div class="imgs">
                     <img src="./img/img_local/local5.jpeg" alt="img3" draggable="false">
                     <img src="./img/img_local/local3.jpeg" alt="img3" draggable="false">
                     <img src="./img/img_local/local2.jpeg" alt="img3" draggable="false">
                     <img src="./img/img_local/local4.jpeg" alt="img3" draggable="false">
                     <img src="./img/img_local/local1.jpeg" alt="img3" draggable="false">
+                </div>
+
+                <div class="container container-imagens hide-carrosel" style="padding-inline: 0">
+                    <div class="fotos">
+                        <i class="fa-solid fa-angle-left arrow-left"></i>
+                        <div class="carrosel">
+                            <img src="./img/img_local/local5.jpeg" alt="img3" draggable="false">
+                            <img src="./img/img_local/local3.jpeg" alt="img3" draggable="false">
+                            <img src="./img/img_local/local2.jpeg" alt="img3" draggable="false">
+                            <img src="./img/img_local/local4.jpeg" alt="img3" draggable="false">
+                            <img src="./img/img_local/local1.jpeg" alt="img3" draggable="false">
+                        </div>
+                        <i class="fa-solid fa-angle-right arrow-right"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,7 +132,7 @@
                     e até mesmo eliminação de odores.</p>
             </div>
             <div class="fotos">
-                <i id="left" class="fa-solid fa-angle-left"></i>
+                <i class="fa-solid fa-angle-left arrow-left"></i>
                 <div class="carrosel">
                     <img src="./produto_banho_fotos/shampoo-diamond.png" alt="img3" draggable="false">
                     <img src="./produto_banho_fotos/condicionador-diamond.png" alt="banner aniversario" draggable="false">
@@ -125,7 +140,7 @@
                     <img src="./produto_banho_fotos/deo-colonia-diamond-png.png" alt="img1" draggable="false">
                     <img src="./produto_banho_fotos/termoprotetor-diamond-png.png" alt="img4" draggable="false">
                 </div>
-                <i id="right" class="fa-solid fa-angle-right"></i>
+                <i class="fa-solid fa-angle-right arrow-right"></i>
             </div>
         </div>
     </section>
@@ -152,7 +167,6 @@
                 <section class="card">
                   <h2>🧼 Serviços Extras</h2>
                   <ul>
-                    <li>Assistência Veterinária</li>
                     <li>Hospedagem</li>
                     <li>Limpeza de ouvido</em></li>
                     <li>Corte de unha</li>
@@ -160,6 +174,18 @@
                   </ul>
                   <p class="info">📅 <a href="https://wa.me/5519993496934" target="_blank"><b>Consulte os valores clicando aqui</b></a></p>
                 </section>
+
+                <section class="card">
+                    <h2>🩺 Assistência Veterinária</h2>
+                    <ul>
+                      <li>Consutas</li>
+                      <li>Exames</li>
+                      <li>Vacinação</li>
+                      <li>Diagnósticos</em></li>
+                      <li>Cirurgias</li>
+                    </ul>
+                    <p class="info">📅 <a href="https://wa.me/5519998097841" target="_blank"><b> Clique aqui para falar com nossa veterinária</b></a></p>
+                  </section>
             
                 <section class="card">
                   <h2>💳 Formas de Pagamento</h2>
@@ -194,7 +220,7 @@
                         <p>(19) 99349-6934</p>
                     </a>
 
-                    <a href="https://wa.me/5519993496934" target="_blank" title="Clique e fale pelo Whatsapp">
+                    <a href="https://wa.me/5519998097841" target="_blank" title="Clique e fale pelo Whatsapp">
                         <img class="btn-whatsapp" src="img/whatsapp.png" alt="botão do Whatsapp">
                         <p>Veterinária Evelyn Ramos</p>
                         <p>(19) 99809-7841</p>
@@ -232,13 +258,21 @@
             </div>
         </div>
     </footer>
-    <a href="#inicio" id="topo"><img src="./img/seta_cima.png" alt="Seta para voltar ao topo da página"></a>
+   <!-- Botão para voltar ao topo -->
+    <div class="topo">
+
+  
+  <!-- Botão flutuante do WhatsApp com tooltip -->
     <div class="tooltip">
-        <a href="https://wa.me/5519993496934" class="whatsapp" id="topo" target="_blank">
-          <img src="img/whatsapp.png" alt="botão do Whatsapp">
-          <span class="tooltip-text">Conversar pelo WhatsApp</span>
+        <a href="https://wa.me/5519993496934" class="whatsapp" id="whatsapp-btn" target="_blank">
+        <img src="img/whatsapp.png" alt="botão do Whatsapp">
+        <span class="tooltip-text">Conversar pelo WhatsApp</span>
         </a>
-      </div>
+    </div>
+        <a href="#inicio" class="btn-topo">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+    </div>
       
     <script src="script.js"></script>
 </body>
