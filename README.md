@@ -1,2 +1,2 @@
-# Site One Page para Cliente Paintball
-## Projeto de criação de um site para uma companhia de Paintball
+# Site One Page para Cliente Petshop Latidos e Miados
+## Projeto de criação de um site para uma companhia de Petshop Latidos e Miados
